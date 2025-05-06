@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(to right, #000, #333);
+    color: #fff;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    height: 50px;
+}
+/* === Шапка === */
+header {
+    background: linear-gradient(to right, #000, #222);
+    padding: 20px 50px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* === Эффект "материала" (тени) для контента (пример) === */
+.content {
+    position: relative; /* Для правильной тени */
+    margin: 50px; /* Отступы от краев */
+    padding: 30px;
+    background-color: rgba(34, 34, 34, 0.8); /*  Полупрозрачный темный цвет */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Материальная тень */
+    z-index: 0;
+    color: #e0e0e0; /*  Чтобы контент был виден на темном фоне */
+}
+
+/*  Анимированный эффект при наведении (динамика) */
+.content:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 8px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /*  Небольшое "поднятие" */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+/* Дополнительные стили для основного контента (пример) */
+main {
+    width: 80%;
+    margin: 100px auto 20px; /*  Отступ от шапки и центрирование по горизонтали */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Дополнительно:  Убедимся, что контент не перекрывает шапку */
+body>header+* {
+    /* Стиль для элементов, следующих за header (например, main) */
+    margin-top: 100px;
+    /* Высота шапки + отступ */
+}
+
+header img {
+    height: 70px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    transform: scale(1.1);
+}
+
+/* Главный баннер */
+.hero {
+    background: url('file:///C:/Users/pc/Downloads/A250100_large.jpg') center/cover no-repeat;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+    margin-top: -50px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 25px;
+    border-radius: 12px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки для коллажа */
+    grid-template-rows: repeat(4, auto); /* Строки будут автоматически адаптироваться */
+    gap: 20px; /* Отступы между элементами */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Добавим разные области для картинок с помощью grid-area */
+.gallery img:nth-child(1) {
+    grid-column: span 2; /* Изображение будет занимать 2 колонки */
+    grid-row: span 2; /* Изображение будет занимать 2 строки */
+}
+
+.gallery img:nth-child(2) {
+    grid-column: span 2; /* Изображение будет занимать 2 колонки */
+    grid-row: span 1; /* 1 строка */
+}
+
+.gallery img:nth-child(3) {
+    grid-column: span 1; /* 1 колонка */
+    grid-row: span 2; /* 2 строки */
+}
+
+.gallery img:nth-child(4) {
+    grid-column: span 1; /* 1 колонка */
+    grid-row: span 1; /* 1 строка */
+}
+
+.gallery img:nth-child(5) {
+    grid-column: span 2; /* 2 колонки */
+    grid-row: span 2; /* 2 строки */
+}
+
+.gallery img:nth-child(6) {
+    grid-column: span 1; /* 1 колонка */
+    grid-row: span 1; /* 1 строка */
+}
+
+.gallery img:nth-child(7) {
+    grid-column: span 1; /* 1 колонка */
+    grid-row: span 1; /* 1 строка */
+}
+
+.gallery img:nth-child(8) {
+    grid-column: span 1; /* 1 колонка */
+    grid-row: span 2; /* 2 строки */
+}
+
+.gallery img:nth-child(9) {
+    grid-column: span 2; /* 2 колонки */
+    grid-row: span 2; /* 2 строки */
+}
+
+.gallery img:nth-child(10) {
+    grid-column: span 1; /* 1 колонка */
+    grid-row: span 1; /* 1 строка */
+}
+
+/* Основные секции */
+section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto 60px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff; /* белый цвет текста для лучшего контраста */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* добавим светящийся эффект */
+    padding: 10px;
+    border-bottom: 2px solid #555;
+    display: inline-block;
+    margin: 0 auto 20px;
+}
+
+/* Изменим цвет текста в секциях "Отзывы", "Галерея", "Новости" */
+.gallery-section h2, .news-section h2, .reviews-section h2 {
+    color: #000; /* чёрный цвет текста */
+    text-shadow: none; /* убираем светящийся эффект */
+}
+
+
+.car-card-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+.car-card-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #e9e9e9; /* Сделаем заголовок светлее */
+}
+
+.car-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    background: #333;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.car-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.car-card-info {
+    max-width: 500px;
+    color: #251d1d; /* Сделаем текст в карточке светлее */
+}
+
+.car-card-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Orbitron', sans-serif;
+    color: #181111; /* Сделаем заголовок светлее */
+}
+
+.car-card-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #080606; /* Светлый цвет текста */
+}
+
+.explore-button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background: linear-gradient(to right, #0ff, #00a3ff);
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.explore-button:hover {
+    background: linear-gradient(to right, #00a3ff, #0ff);
+    transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Анимации для моделей */
+.car-card-section {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.car-card {
+    background: #e7e7e7;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5);
+}
+
+.car-card:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.7);
+}
+
+.car-card-info {
+    padding: 15px;
+}
+
+.explore-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    background: linear-gradient(to right, #0ff, #00a3ff);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.explore-button:hover {
+    background: linear-gradient(to right, #00a3ff, #0ff);
+    transform: scale(1.1);
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.model-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+}
+
+.model-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.model-card img:hover {
+    transform: scale(1.1);
+}
+
+.models-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.model-card {
+    width: 30%;
+    background: rgb(5, 2, 2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: 500px; /* Устанавливаем максимальную высоту карточки */
+}
+
+.model-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.model-card img {
+    width: 100%;
+    height: 60%; /* Устанавливаем высоту изображения относительно высоты карточки */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.model-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Уменьшаем пространство между названием и ценой */
+.model-card h3, .model-card p {
+    margin: 5px 0; /* Уменьшаем отступы между этими элементами */
+}
+
+/* Кнопки */
+.model-card .buy-button {
+    margin-top: auto; /* Кнопки всегда внизу */
+    padding: 12px 20px;
+    background-color: #0ff;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    width: 30%; /* Кнопки занимают всю ширину карточки */
+}
+
+.model-card .buy-button:hover {
+    background-color: #00a3ff;
+}
+
+
+/* Для кнопок */
+.model-card .buy-button {
+    margin-top: auto; /* Позволяет кнопкам оставаться внизу карточки */
+    padding: 12px 20px;
+    background-color: #0ff;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.model-card .buy-button:hover {
+    background-color: #00a3ff;
+}
+
+
+/* Анимации для кнопок */
+.buy-button, form button {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #0ff, #00a3ff);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.buy-button:hover, form button:hover {
+    background: linear-gradient(to right, #00a3ff, #0ff);
+    transform: scale(1.1);
+}
+
+/* Улучшенная анимация и стили для формы */
+form {
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid #777;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    animation: popUp 1s ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes popUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+form input, form select {
+    width: calc(100% - 20px);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #777;
+    background: #222;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+form input:focus, form select:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+form label {
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Исправление для конфигуратора */
+.configurator {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto; /* Центрируем конфигуратор */
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px 30px;
+    }
+
+    .model-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .buy-button, form button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .configurator {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* Эффект парallax для фона */
+.hero {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    animation: parallaxEffect 15s infinite linear;
+}
+
+@keyframes parallaxEffect {
+    0% {
+        background-position: center;
+    }
+    50% {
+        background-position: top;
+    }
+    100% {
+        background-position: center;
+    }
+}
+
+/* Футуристический фон для секций */
+section {
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3) 20%, rgba(0, 0, 0, 0.7) 80%);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+    padding: 40px;
+    margin-top: 50px;
+}
+
+section h1, section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
