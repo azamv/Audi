@@ -253,7 +253,6 @@ h1, h2 {
     animation: fadeInUp 1s ease-out;
     border: 1px solid rgba(191, 161, 75, 0.2);
 }
-
 .car-card-section h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 32px;
