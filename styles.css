@@ -246,12 +246,12 @@ h1, h2 {
     margin: 40px auto;
     padding: 40px;
     text-align: center;
-    background: linear-gradient(135deg, #012020, #014f4f, #c9a037);
-    color: #fff9e6;
+    background: linear-gradient(135deg, #1b1b1b, #2c2c2c, #bfa14b);
+    color: #fffdf2;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(201, 160, 55, 0.3);
+    box-shadow: 0 12px 30px rgba(191, 161, 75, 0.3);
     animation: fadeInUp 1s ease-out;
-    border: 1px solid rgba(201, 160, 55, 0.2);
+    border: 1px solid rgba(191, 161, 75, 0.2);
 }
 
 .car-card-section h2 {
