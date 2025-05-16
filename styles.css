@@ -493,7 +493,7 @@ h1, h2 {
     padding: 12px 25px;
     border-radius: 30px;
     font-weight: bold;
-    background: linear-gradient(to right, #0ff, #00a3ff);
+    linear-gradient(to right, #a90000c2, #c5763fde);
     color: #000;
     border: none;
     cursor: pointer;
