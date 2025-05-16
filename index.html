@@ -667,41 +667,46 @@
   </script>
 
 <section id="testdrive" style="
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 32px 36px;
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 48px 54px;
   background: #1e1b16;
-  border-radius: 18px;
-  box-shadow: 0 0 12px rgba(181, 148, 85, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 18px rgba(181, 148, 85, 0.35);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #c4af6d;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.025em;
+  line-height: 1.45;
 ">
 
   <h2 style="
-    font-weight: 600;
-    font-size: 1.8rem;
-    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 32px;
     text-align: center;
     border-bottom: 1px solid #3b3523;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
+    font-family: 'Georgia', serif;
   ">
     Записаться на тест-драйв
   </h2>
 
-  <form id="testDriveForm" style="display: flex; flex-direction: column; gap: 18px;">
+  <form id="testDriveForm" style="display: flex; flex-wrap: wrap; gap: 28px;">
 
-    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+    <!-- Поля распределены в две колонки -->
+    <label style="flex: 1 1 48%; display: flex; flex-direction: column; font-weight: 400; font-size: 0.9rem;">
       Ваше имя
       <input type="text" id="name" name="name" placeholder="Иван Иванов" required
         style="
           margin-top: 6px;
-          padding: 10px 14px;
-          border-radius: 12px;
+          padding: 8px 12px;
+          border-radius: 10px;
           border: 1px solid #3b3523;
           background: #292520;
           color: #c4af6d;
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           transition: border-color 0.25s ease;
         "
         onfocus="this.style.borderColor='#b5973e'"
@@ -709,17 +714,19 @@
       />
     </label>
 
-    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+    <label style="flex: 1 1 48%; display: flex; flex-direction: column; font-weight: 400; font-size: 0.9rem;">
       Телефон
       <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required
         style="
           margin-top: 6px;
-          padding: 10px 14px;
-          border-radius: 12px;
+          padding: 8px 12px;
+          border-radius: 10px;
           border: 1px solid #3b3523;
           background: #292520;
           color: #c4af6d;
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           transition: border-color 0.25s ease;
         "
         onfocus="this.style.borderColor='#b5973e'"
@@ -727,17 +734,19 @@
       />
     </label>
 
-    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+    <label style="flex: 1 1 48%; display: flex; flex-direction: column; font-weight: 400; font-size: 0.9rem;">
       Email
       <input type="email" id="email" name="email" placeholder="example@mail.com" required
         style="
           margin-top: 6px;
-          padding: 10px 14px;
-          border-radius: 12px;
+          padding: 8px 12px;
+          border-radius: 10px;
           border: 1px solid #3b3523;
           background: #292520;
           color: #c4af6d;
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           transition: border-color 0.25s ease;
         "
         onfocus="this.style.borderColor='#b5973e'"
@@ -745,17 +754,19 @@
       />
     </label>
 
-    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+    <label style="flex: 1 1 48%; display: flex; flex-direction: column; font-weight: 400; font-size: 0.9rem;">
       Город
       <input type="text" id="location" name="location" placeholder="Москва" required
         style="
           margin-top: 6px;
-          padding: 10px 14px;
-          border-radius: 12px;
+          padding: 8px 12px;
+          border-radius: 10px;
           border: 1px solid #3b3523;
           background: #292520;
           color: #c4af6d;
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           transition: border-color 0.25s ease;
         "
         onfocus="this.style.borderColor='#b5973e'"
@@ -763,17 +774,19 @@
       />
     </label>
 
-    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+    <label style="flex: 1 1 48%; display: flex; flex-direction: column; font-weight: 400; font-size: 0.9rem;">
       Модель
       <select id="model" name="model" required
         style="
           margin-top: 6px;
-          padding: 10px 14px;
-          border-radius: 12px;
+          padding: 8px 12px;
+          border-radius: 10px;
           border: 1px solid #3b3523;
           background: #292520;
           color: #c4af6d;
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           cursor: pointer;
           transition: border-color 0.25s ease;
         "
@@ -790,17 +803,19 @@
       </select>
     </label>
 
-    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+    <label style="flex: 1 1 48%; display: flex; flex-direction: column; font-weight: 400; font-size: 0.9rem;">
       Дата
       <input type="date" id="date" name="date" required
         style="
           margin-top: 6px;
-          padding: 10px 14px;
-          border-radius: 12px;
+          padding: 8px 12px;
+          border-radius: 10px;
           border: 1px solid #3b3523;
           background: #292520;
           color: #c4af6d;
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           transition: border-color 0.25s ease;
         "
         onfocus="this.style.borderColor='#b5973e'"
@@ -808,17 +823,19 @@
       />
     </label>
 
-    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+    <label style="flex: 1 1 48%; display: flex; flex-direction: column; font-weight: 400; font-size: 0.9rem;">
       Время
       <input type="time" id="time" name="time" required
         style="
           margin-top: 6px;
-          padding: 10px 14px;
-          border-radius: 12px;
+          padding: 8px 12px;
+          border-radius: 10px;
           border: 1px solid #3b3523;
           background: #292520;
           color: #c4af6d;
-          font-size: 1rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           transition: border-color 0.25s ease;
         "
         onfocus="this.style.borderColor='#b5973e'"
@@ -826,33 +843,37 @@
       />
     </label>
 
-    <button type="submit" style="
-      margin-top: 28px;
-      padding: 14px 0;
-      border-radius: 30px;
-      border: none;
-      background: linear-gradient(90deg, #a88f32, #d9c974);
-      color: #2f2700;
-      font-weight: 700;
-      font-size: 1.25rem;
-      cursor: pointer;
-      box-shadow: 0 4px 12px #bfae4e88;
-      transition: background 0.3s ease, transform 0.25s ease;
-    "
-    onmouseover="this.style.background='linear-gradient(90deg, #d9c974, #a88f32)'; this.style.transform='scale(1.05)';"
-    onmouseout="this.style.background='linear-gradient(90deg, #a88f32, #d9c974)'; this.style.transform='scale(1)';"
-    >
-      Записаться
-    </button>
+    <div style="flex-basis: 100%; text-align: center; margin-top: 28px;">
+      <button type="submit" style="
+        padding: 16px 64px;
+        border-radius: 28px;
+        border: none;
+        background: linear-gradient(90deg, #a88f32, #d9c974);
+        color: #2f2700;
+        font-weight: 600;
+        font-size: 1.1rem;
+        cursor: pointer;
+        box-shadow: 0 6px 14px #bfae4eaa;
+        transition: background 0.3s ease, transform 0.25s ease;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      "
+      onmouseover="this.style.background='linear-gradient(90deg, #d9c974, #a88f32)'; this.style.transform='scale(1.07)';"
+      onmouseout="this.style.background='linear-gradient(90deg, #a88f32, #d9c974)'; this.style.transform='scale(1)';"
+      >
+        Записаться
+      </button>
+    </div>
 
   </form>
 
   <p id="message" style="
-    margin-top: 20px;
+    margin-top: 26px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 0.95rem;
     color: #d9c974;
-    min-height: 24px;
+    min-height: 26px;
+    font-family: 'Georgia', serif;
   "></p>
 </section>
 
