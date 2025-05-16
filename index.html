@@ -203,249 +203,162 @@
     </div>
 </section>
 
+    
 <section id="news" class="news-section" style="
-  max-width: 900px;
+  max-width: 1000px;
   margin: 60px auto;
-  padding: 0 20px;
-  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  padding: 40px 24px;
+  font-family: 'Poppins', sans-serif;
   background: #12110b;
   border-radius: 24px;
-  box-shadow: 0 0 48px #000000bb;
+  color: white;
+  box-shadow: 0 0 48px #000000cc;
 ">
 
   <h2 style="
-    font-size: 2.8rem;
-    font-weight: 600;
-    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 48px;
+    text-align: center;
     letter-spacing: 0.07em;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    border-bottom: 2px solid #444;
-    padding-bottom: 8px;
-  ">
-    Новости Audi
-  </h2>
+    border-bottom: 3px solid #444;
+    padding-bottom: 12px;
+  ">Новости Audi</h2>
 
-  <div class="news-list" style="display: flex; flex-direction: column; gap: 28px;">
+  <div style="display: flex; flex-direction: column; gap: 36px;">
 
-    <article class="news-item" style="
+    <!-- Новость 1 -->
+    <article style="
       display: flex;
-      align-items: center;
+      gap: 28px;
       background: #1f1c14;
       border-radius: 20px;
-      box-shadow: 0 8px 24px #000000cc;
-      padding: 24px 32px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 28px 36px;
+      box-shadow: 0 10px 30px #000000cc;
+      transition: transform 0.3s ease;
       cursor: pointer;
-      overflow: hidden;
     "
-    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 16px 48px #c8c8c8aa';"
-    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #000000cc';"
+    onmouseenter="this.style.transform='scale(1.04)';"
+    onmouseleave="this.style.transform='scale(1)';"
     >
 
-      <!-- Параллелограмм для фотки -->
       <div style="
-        width: 90px;
-        height: 120px;
-        background-image: url('https://cdn.pixabay.com/photo/2017/02/06/11/38/audi-2047842_1280.jpg');
-        background-size: cover;
-        background-position: center;
-        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-        margin-right: 28px;
+        width: 100px; height: 130px;
+        background: url('https://cdn.pixabay.com/photo/2017/02/06/11/38/audi-2047842_1280.jpg') center/cover no-repeat;
+        clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+        box-shadow: 0 0 20px #bfae4eaa;
         flex-shrink: 0;
-        box-shadow: 0 0 16px #bfae4e66;
-        transition: box-shadow 0.3s ease;
-      "
-      onmouseenter="this.style.boxShadow='0 0 24px #d9c974cc';"
-      onmouseleave="this.style.boxShadow='0 0 16px #bfae4e66';"
-      ></div>
+      "></div>
 
-      <div style="flex: 1;">
-        <h3 style="
-          font-size: 1.4rem;
-          font-weight: 700;
-          margin-bottom: 8px;
-          color: white;
-          letter-spacing: 0.02em;
-        ">
-          Audi представила новый RS e-tron GT Performance
-        </h3>
+      <div style="flex: 1; display: flex; flex-direction: column;">
 
-        <p style="
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.4;
-          color: #ccc;
-          margin-bottom: 12px;
-          max-width: 620px;
-        ">
-          Электрический суперкар с 900 л.с. уже доступен для заказа.
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 6px;">Audi представила новый RS e-tron GT Performance</h3>
+
+        <p style="font-size: 1rem; color: #d0c9b8; margin-bottom: 12px; line-height: 1.5;">
+          Новый электрический суперкар с мощностью 900 л.с. и разгоном до 100 км/ч за 3.3 секунды. Уже доступен для заказа с расширенной комплектацией.
         </p>
 
-        <footer style="
-          font-size: 0.85rem;
-          font-style: italic;
-          color: #999;
-          letter-spacing: 0.02em;
-          user-select: none;
-        ">
-          15 мая 2025
-        </footer>
-      </div>
+        <div style="display: flex; gap: 12px; font-size: 0.85rem; color: #bfb8a4; margin-bottom: 14px; flex-wrap: wrap;">
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Электромобиль</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Суперкар</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">2025</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Премьера</span>
+        </div>
 
+        <footer style="margin-top: auto; font-size: 0.85rem; color: #999;">15 мая 2025 &nbsp;|&nbsp; Источник: <a href="https://www.audi.com" target="_blank" style="color: #bfae4e; text-decoration: none;">audi.com</a></footer>
+
+      </div>
     </article>
 
-    <!-- Повторяем для остальных новостей -->
-
-    <article class="news-item" style="
+    <!-- Новость 2 -->
+    <article style="
       display: flex;
-      align-items: center;
+      gap: 28px;
       background: #1f1c14;
       border-radius: 20px;
-      box-shadow: 0 8px 24px #000000cc;
-      padding: 24px 32px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 28px 36px;
+      box-shadow: 0 10px 30px #000000cc;
+      transition: transform 0.3s ease;
       cursor: pointer;
-      overflow: hidden;
     "
-    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 16px 48px #c8c8c8aa';"
-    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #000000cc';"
+    onmouseenter="this.style.transform='scale(1.04)';"
+    onmouseleave="this.style.transform='scale(1)';"
     >
 
       <div style="
-        width: 90px;
-        height: 120px;
-        background-image: url('https://cdn.pixabay.com/photo/2018/01/19/07/20/audi-3093933_1280.jpg');
-        background-size: cover;
-        background-position: center;
-        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-        margin-right: 28px;
+        width: 100px; height: 130px;
+        background: url('https://cdn.pixabay.com/photo/2018/01/19/07/20/audi-3093933_1280.jpg') center/cover no-repeat;
+        clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+        box-shadow: 0 0 20px #bfae4eaa;
         flex-shrink: 0;
-        box-shadow: 0 0 16px #bfae4e66;
-        transition: box-shadow 0.3s ease;
-      "
-      onmouseenter="this.style.boxShadow='0 0 24px #d9c974cc';"
-      onmouseleave="this.style.boxShadow='0 0 16px #bfae4e66';"
-      ></div>
+      "></div>
 
-      <div style="flex: 1;">
-        <h3 style="
-          font-size: 1.4rem;
-          font-weight: 700;
-          margin-bottom: 8px;
-          color: white;
-          letter-spacing: 0.02em;
-        ">
-          Запуск нового Audi Q3
-        </h3>
+      <div style="flex: 1; display: flex; flex-direction: column;">
 
-        <p style="
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.4;
-          color: #ccc;
-          margin-bottom: 12px;
-          max-width: 620px;
-        ">
-          Внедорожник с улучшенной аэродинамикой и продвинутыми технологиями.
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 6px;">Запуск нового Audi Q3</h3>
+
+        <p style="font-size: 1rem; color: #d0c9b8; margin-bottom: 12px; line-height: 1.5;">
+          Компактный внедорожник с улучшенной аэродинамикой, системой полного привода и современными технологиями безопасности.
         </p>
 
-        <footer style="
-          font-size: 0.85rem;
-          font-style: italic;
-          color: #999;
-          letter-spacing: 0.02em;
-          user-select: none;
-        ">
-          5 мая 2025
-        </footer>
-      </div>
+        <div style="display: flex; gap: 12px; font-size: 0.85rem; color: #bfb8a4; margin-bottom: 14px; flex-wrap: wrap;">
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Внедорожник</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Технологии</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">2025</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Безопасность</span>
+        </div>
 
+        <footer style="margin-top: auto; font-size: 0.85rem; color: #999;">5 мая 2025 &nbsp;|&nbsp; Источник: <a href="https://www.audi.com" target="_blank" style="color: #bfae4e; text-decoration: none;">audi.com</a></footer>
+
+      </div>
     </article>
 
-    <article class="news-item" style="
+    <!-- Новость 3 -->
+    <article style="
       display: flex;
-      align-items: center;
+      gap: 28px;
       background: #1f1c14;
       border-radius: 20px;
-      box-shadow: 0 8px 24px #000000cc;
-      padding: 24px 32px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 28px 36px;
+      box-shadow: 0 10px 30px #000000cc;
+      transition: transform 0.3s ease;
       cursor: pointer;
-      overflow: hidden;
     "
-    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 16px 48px #c8c8c8aa';"
-    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #000000cc';"
+    onmouseenter="this.style.transform='scale(1.04)';"
+    onmouseleave="this.style.transform='scale(1)';"
     >
 
       <div style="
-        width: 90px;
-        height: 120px;
-        background-image: url('https://cdn.pixabay.com/photo/2019/03/18/10/26/audi-4063516_1280.jpg');
-        background-size: cover;
-        background-position: center;
-        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-        margin-right: 28px;
+        width: 100px; height: 130px;
+        background: url('https://cdn.pixabay.com/photo/2019/03/18/10/26/audi-4063516_1280.jpg') center/cover no-repeat;
+        clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+        box-shadow: 0 0 20px #bfae4eaa;
         flex-shrink: 0;
-        box-shadow: 0 0 16px #bfae4e66;
-        transition: box-shadow 0.3s ease;
-      "
-      onmouseenter="this.style.boxShadow='0 0 24px #d9c974cc';"
-      onmouseleave="this.style.boxShadow='0 0 16px #bfae4e66';"
-      ></div>
+      "></div>
 
-      <div style="flex: 1;">
-        <h3 style="
-          font-size: 1.4rem;
-          font-weight: 700;
-          margin-bottom: 8px;
-          color: white;
-          letter-spacing: 0.02em;
-        ">
-          Презентация Audi RS5
-        </h3>
+      <div style="flex: 1; display: flex; flex-direction: column;">
 
-        <p style="
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.4;
-          color: #ccc;
-          margin-bottom: 12px;
-          max-width: 620px;
-        ">
-          Новое поколение легендарного фастбэка.
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 6px;">Презентация Audi RS5</h3>
+
+        <p style="font-size: 1rem; color: #d0c9b8; margin-bottom: 12px; line-height: 1.5;">
+          Новое поколение легендарного спортивного фастбэка с улучшенной динамикой, инновационными функциями и уникальным дизайном.
         </p>
 
-        <footer style="
-          font-size: 0.85rem;
-          font-style: italic;
-          color: #999;
-          letter-spacing: 0.02em;
-          user-select: none;
-        ">
-          20 апреля 2025
-        </footer>
-      </div>
+        <div style="display: flex; gap: 12px; font-size: 0.85rem; color: #bfb8a4; margin-bottom: 14px; flex-wrap: wrap;">
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Спорткар</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Дизайн</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">2025</span>
+          <span style="background: #3a382d88; padding: 3px 10px; border-radius: 12px;">Динамика</span>
+        </div>
 
+        <footer style="margin-top: auto; font-size: 0.85rem; color: #999;">20 апреля 2025 &nbsp;|&nbsp; Источник: <a href="https://www.audi.com" target="_blank" style="color: #bfae4e; text-decoration: none;">audi.com</a></footer>
+
+      </div>
     </article>
 
   </div>
 
 </section>
-
-<section id="gallery" class="gallery-section">
-    <h2>Галерея</h2>
-    <div class="gallery">
-        <img src="https://scontent-dus1-1.xx.fbcdn.net/v/t39.30808-6/487823502_1188032222688288_5201732394223999453_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_ohc=2SAEC_a2nosQ7kNvwHEbQcC&_nc_oc=AdkN09xvzBj9s9QgtYW5D_9MOp-qUROBcXmu5jCqiYEsrApfVKumkGOTcDmcvbYnyyI&_nc_zt=23&_nc_ht=scontent-dus1-1.xx&_nc_gid=H8SKhDy9Sw5316EgJqK2vg&oh=00_AfJc0bldIYlJIscG78_a36TNukzgDvlpjH-8yY4QcQ9Z4g&oe=681F9F84" alt="Audi Image 1">
-        <img src="https://d1gl66oyi6i593.cloudfront.net/wp-content/uploads/2024/12/prueba-audi-s5-2025.jpg" alt="Audi Image 2">
-        <img src="https://fuelcarmagazine.com/wp-content/uploads/2022/10/A225157_large-2048x1152.jpg" alt="Audi Image 3">
-        <img src="https://cdn.vox-cdn.com/thumbor/0CsbVzoHC9-VcRvVTDlUGdcu2sI=/0x0:3455x2303/1200x628/filters:focal(1728x1152:1729x1153)/cdn.vox-cdn.com/uploads/chorus_asset/file/25749454/Original_13620_a244112_large.jpg" alt="Audi Image 4">
-    </div>
-</section>
-
 <section id="reviews" class="reviews-section">
     <h2>Отзывы клиентов</h2>
     <div class="review"><h3>Кураев Магомед</h3><p>"Audi RS7 — это просто бомбовая ежи"</p></div>
