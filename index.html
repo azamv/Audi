@@ -358,14 +358,13 @@
         
 <section id="reviews" class="reviews-section" style="
   max-width: 1000px;
-  margin: 0 auto 80px;
-  padding: 28px 24px 40px;
+  margin: 0 auto -40px; /* убираем верхний отступ, можно даже отрицательный */
+  padding: 0 24px 48px;
   font-family: 'Poppins', sans-serif;
-  background: #2d280ed1;
-  border-radius: 0 0 24px 24px;
+  background: transparent; /* пусть наследует фон или покажет плавность */
+  border-radius: 0 0 24px 24px; /* скругление только снизу */
   color: #e0e0e0;
-  box-shadow: 0 0 48px #000000cc;
-  overflow: hidden;
+  box-shadow: none;
 ">
 
   <h2 style="
