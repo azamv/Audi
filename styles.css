@@ -473,7 +473,7 @@ h1, h2 {
 .model-card .buy-button {
     margin-top: auto; /* Позволяет кнопкам оставаться внизу карточки */
     padding: 12px 20px;
-    background-color: #0ff;
+    background: linear-gradient(to right, #0ff, #5998bb);
     border: none;
     color: black;
     font-size: 16px;
