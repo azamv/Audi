@@ -207,19 +207,24 @@
   max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #cdbd76;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background: #12110b;
+  border-radius: 24px;
+  box-shadow: 0 0 48px #000000bb;
 ">
 
   <h2 style="
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 48px;
-    color: #bfae4e;
-    text-shadow: 0 0 8px #d9c974aa;
-    letter-spacing: 0.05em;
-    font-family: 'Georgia', serif;
+    letter-spacing: 0.07em;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 2px solid #444;
+    padding-bottom: 8px;
   ">
     Новости Audi
   </h2>
@@ -227,180 +232,204 @@
   <div class="news-list" style="display: flex; flex-direction: column; gap: 28px;">
 
     <article class="news-item" style="
-      background: linear-gradient(145deg, #2b271a, #1a1710);
+      display: flex;
+      align-items: center;
+      background: #1f1c14;
       border-radius: 20px;
-      box-shadow: 0 8px 22px #bfae4e55;
-      padding: 28px 36px;
+      box-shadow: 0 8px 24px #000000cc;
+      padding: 24px 32px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
-      position: relative;
       overflow: hidden;
-    " 
-    onmouseenter="this.style.transform='scale(1.02)'; this.style.boxShadow='0 16px 44px #d9c974bb';"
-    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 22px #bfae4e55';"
+    "
+    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 16px 48px #c8c8c8aa';"
+    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #000000cc';"
     >
 
-      <h3 style="
-        font-size: 1.6rem;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: #d9c974;
-        letter-spacing: 0.03em;
-        text-shadow: 0 0 5px #bfae4e88;
-      ">
-        Audi представила новый RS e-tron GT Performance
-      </h3>
+      <!-- Параллелограмм для фотки -->
+      <div style="
+        width: 90px;
+        height: 120px;
+        background-image: url('https://cdn.pixabay.com/photo/2017/02/06/11/38/audi-2047842_1280.jpg');
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+        margin-right: 28px;
+        flex-shrink: 0;
+        box-shadow: 0 0 16px #bfae4e66;
+        transition: box-shadow 0.3s ease;
+      "
+      onmouseenter="this.style.boxShadow='0 0 24px #d9c974cc';"
+      onmouseleave="this.style.boxShadow='0 0 16px #bfae4e66';"
+      ></div>
 
-      <p style="
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #cdbd76cc;
-        max-width: 720px;
-      ">
-        Электрический суперкар с 900 л.с. уже доступен для заказа.
-      </p>
+      <div style="flex: 1;">
+        <h3 style="
+          font-size: 1.4rem;
+          font-weight: 700;
+          margin-bottom: 8px;
+          color: white;
+          letter-spacing: 0.02em;
+        ">
+          Audi представила новый RS e-tron GT Performance
+        </h3>
 
-      <footer style="
-        margin-top: 18px;
-        font-size: 0.85rem;
-        font-style: italic;
-        color: #a8934a;
-        letter-spacing: 0.02em;
-        user-select: none;
-      ">
-        15 мая 2025
-      </footer>
+        <p style="
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.4;
+          color: #ccc;
+          margin-bottom: 12px;
+          max-width: 620px;
+        ">
+          Электрический суперкар с 900 л.с. уже доступен для заказа.
+        </p>
+
+        <footer style="
+          font-size: 0.85rem;
+          font-style: italic;
+          color: #999;
+          letter-spacing: 0.02em;
+          user-select: none;
+        ">
+          15 мая 2025
+        </footer>
+      </div>
+
+    </article>
+
+    <!-- Повторяем для остальных новостей -->
+
+    <article class="news-item" style="
+      display: flex;
+      align-items: center;
+      background: #1f1c14;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px #000000cc;
+      padding: 24px 32px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+    "
+    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 16px 48px #c8c8c8aa';"
+    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #000000cc';"
+    >
 
       <div style="
-        position: absolute;
-        top: 18px;
-        right: 18px;
-        width: 48px;
-        height: 48px;
-        background: radial-gradient(circle at center, #bfae4e, transparent);
-        border-radius: 50%;
-        filter: blur(18px);
-        z-index: 0;
-      "></div>
+        width: 90px;
+        height: 120px;
+        background-image: url('https://cdn.pixabay.com/photo/2018/01/19/07/20/audi-3093933_1280.jpg');
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+        margin-right: 28px;
+        flex-shrink: 0;
+        box-shadow: 0 0 16px #bfae4e66;
+        transition: box-shadow 0.3s ease;
+      "
+      onmouseenter="this.style.boxShadow='0 0 24px #d9c974cc';"
+      onmouseleave="this.style.boxShadow='0 0 16px #bfae4e66';"
+      ></div>
+
+      <div style="flex: 1;">
+        <h3 style="
+          font-size: 1.4rem;
+          font-weight: 700;
+          margin-bottom: 8px;
+          color: white;
+          letter-spacing: 0.02em;
+        ">
+          Запуск нового Audi Q3
+        </h3>
+
+        <p style="
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.4;
+          color: #ccc;
+          margin-bottom: 12px;
+          max-width: 620px;
+        ">
+          Внедорожник с улучшенной аэродинамикой и продвинутыми технологиями.
+        </p>
+
+        <footer style="
+          font-size: 0.85rem;
+          font-style: italic;
+          color: #999;
+          letter-spacing: 0.02em;
+          user-select: none;
+        ">
+          5 мая 2025
+        </footer>
+      </div>
+
     </article>
 
     <article class="news-item" style="
-      background: linear-gradient(145deg, #2b271a, #1a1710);
+      display: flex;
+      align-items: center;
+      background: #1f1c14;
       border-radius: 20px;
-      box-shadow: 0 8px 22px #bfae4e55;
-      padding: 28px 36px;
+      box-shadow: 0 8px 24px #000000cc;
+      padding: 24px 32px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
-      position: relative;
       overflow: hidden;
     "
-    onmouseenter="this.style.transform='scale(1.02)'; this.style.boxShadow='0 16px 44px #d9c974bb';"
-    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 22px #bfae4e55';"
+    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 16px 48px #c8c8c8aa';"
+    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #000000cc';"
     >
 
-      <h3 style="
-        font-size: 1.6rem;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: #d9c974;
-        letter-spacing: 0.03em;
-        text-shadow: 0 0 5px #bfae4e88;
-      ">
-        Запуск нового Audi Q3
-      </h3>
-
-      <p style="
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #cdbd76cc;
-        max-width: 720px;
-      ">
-        Внедорожник с улучшенной аэродинамикой и продвинутыми технологиями.
-      </p>
-
-      <footer style="
-        margin-top: 18px;
-        font-size: 0.85rem;
-        font-style: italic;
-        color: #a8934a;
-        letter-spacing: 0.02em;
-        user-select: none;
-      ">
-        5 мая 2025
-      </footer>
-
       <div style="
-        position: absolute;
-        top: 18px;
-        right: 18px;
-        width: 48px;
-        height: 48px;
-        background: radial-gradient(circle at center, #bfae4e, transparent);
-        border-radius: 50%;
-        filter: blur(18px);
-        z-index: 0;
-      "></div>
-    </article>
+        width: 90px;
+        height: 120px;
+        background-image: url('https://cdn.pixabay.com/photo/2019/03/18/10/26/audi-4063516_1280.jpg');
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+        margin-right: 28px;
+        flex-shrink: 0;
+        box-shadow: 0 0 16px #bfae4e66;
+        transition: box-shadow 0.3s ease;
+      "
+      onmouseenter="this.style.boxShadow='0 0 24px #d9c974cc';"
+      onmouseleave="this.style.boxShadow='0 0 16px #bfae4e66';"
+      ></div>
 
-    <article class="news-item" style="
-      background: linear-gradient(145deg, #2b271a, #1a1710);
-      border-radius: 20px;
-      box-shadow: 0 8px 22px #bfae4e55;
-      padding: 28px 36px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    "
-    onmouseenter="this.style.transform='scale(1.02)'; this.style.boxShadow='0 16px 44px #d9c974bb';"
-    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 22px #bfae4e55';"
-    >
+      <div style="flex: 1;">
+        <h3 style="
+          font-size: 1.4rem;
+          font-weight: 700;
+          margin-bottom: 8px;
+          color: white;
+          letter-spacing: 0.02em;
+        ">
+          Презентация Audi RS5
+        </h3>
 
-      <h3 style="
-        font-size: 1.6rem;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: #d9c974;
-        letter-spacing: 0.03em;
-        text-shadow: 0 0 5px #bfae4e88;
-      ">
-        Презентация Audi RS5
-      </h3>
+        <p style="
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.4;
+          color: #ccc;
+          margin-bottom: 12px;
+          max-width: 620px;
+        ">
+          Новое поколение легендарного фастбэка.
+        </p>
 
-      <p style="
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #cdbd76cc;
-        max-width: 720px;
-      ">
-        Новое поколение легендарного фастбэка.
-      </p>
+        <footer style="
+          font-size: 0.85rem;
+          font-style: italic;
+          color: #999;
+          letter-spacing: 0.02em;
+          user-select: none;
+        ">
+          20 апреля 2025
+        </footer>
+      </div>
 
-      <footer style="
-        margin-top: 18px;
-        font-size: 0.85rem;
-        font-style: italic;
-        color: #a8934a;
-        letter-spacing: 0.02em;
-        user-select: none;
-      ">
-        20 апреля 2025
-      </footer>
-
-      <div style="
-        position: absolute;
-        top: 18px;
-        right: 18px;
-        width: 48px;
-        height: 48px;
-        background: radial-gradient(circle at center, #bfae4e, transparent);
-        border-radius: 50%;
-        filter: blur(18px);
-        z-index: 0;
-      "></div>
     </article>
 
   </div>
