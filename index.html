@@ -360,20 +360,20 @@
   </div>
 
 <section id="reviews" class="reviews-section">
-  <h2 class="reviews-title">Отзывы клиентов</h2>
-  <div class="reviews-list">
+  <h2 class="reviews-section__title">Отзывы клиентов</h2>
+  <div class="reviews-section__list">
 
-    <div class="review-card">
+    <div class="reviews-section__card">
       <h3>Кураев Магомед</h3>
       <p>"Audi RS7 — это просто бомбовая ежи"</p>
     </div>
 
-    <div class="review-card">
+    <div class="reviews-section__card">
       <h3>Каджаева Радмила</h3>
       <p>"Топовая S5. Как я на ней гоняю ешкин кот"</p>
     </div>
 
-    <div class="review-card">
+    <div class="reviews-section__card">
       <h3>Братанов Серёжа</h3>
       <p>"Audi S8 – Боженька просто"</p>
     </div>
@@ -382,6 +382,7 @@
 </section>
 
 <style>
+  /* Ограничиваем стили только внутри .reviews-section */
   .reviews-section {
     padding: 60px 20px;
     background-color: #000;
@@ -389,34 +390,34 @@
     text-align: center;
     font-family: 'Orbitron', sans-serif;
   }
-  .reviews-title {
+  .reviews-section__title {
     font-size: 36px;
     margin-bottom: 40px;
     color: white;
   }
-  .reviews-list {
+  .reviews-section__list {
     max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  .review-card {
+  .reviews-section__card {
     background-color: #111;
     border-radius: 20px;
     padding: 25px 30px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease;
   }
-  .review-card:hover {
+  .reviews-section__card:hover {
     transform: scale(1.03);
   }
-  .review-card h3 {
+  .reviews-section__card h3 {
     font-size: 22px;
     margin-bottom: 12px;
     color: #f0c14b; /* лёгкий золотистый акцент */
   }
-  .review-card p {
+  .reviews-section__card p {
     font-size: 18px;
     color: #ccc;
     font-style: italic;
