@@ -356,98 +356,90 @@
         </div>
  </section>
         
-<section id="reviews" style="
+<section id="reviews" class="reviews-section" style="
   max-width: 1000px;
   margin: 0 auto 80px;
-  padding: 0 24px 48px;
+  padding: 28px 24px 40px;
   font-family: 'Poppins', sans-serif;
   background: #2d280ed1;
   border-radius: 0 0 24px 24px;
-  color: #d0c9b8;
+  color: #e0e0e0;
+  box-shadow: 0 0 48px #000000cc;
+  overflow: hidden;
 ">
 
   <h2 style="
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin: 0 auto 32px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 28px;
     text-align: center;
-    border-bottom: 1px solid #444;
-    padding-bottom: 8px;
-    width: fit-content;
-    color: #e3e1d9;
-    animation: fadeIn 0.6s ease-out;
+    letter-spacing: 0.07em;
+    color: #f5f5f5;
+    text-shadow: 0 0 8px #bfae4eaa;
   ">Отзывы клиентов</h2>
 
-  <div style="display: flex; flex-direction: column; gap: 18px;">
-    
-    <div class="review-card">
-      <h3>Кураев Магомед</h3>
-      <p>"Audi RS7 — это просто бомбовая ежи"</p>
-    </div>
+  <div style="display: flex; flex-direction: column; gap: 20px;">
 
-    <div class="review-card" style="animation-delay: 0.15s;">
-      <h3>Каджаева Радмила</h3>
-      <p>"Топовая S5. Как я на ней гоняю ешкин кот"</p>
-    </div>
+    <article style="
+      background: #1f1c14cc;
+      border-radius: 20px;
+      padding: 20px 28px;
+      box-shadow: 0 8px 20px #000000cc;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: default;
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+      animation-delay: 0.1s;
+    " onmouseenter="this.style.transform='scale(1.035)'; this.style.boxShadow='0 12px 36px #bfae4eaa';" onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #000000cc';">
+      <h3 style="margin: 0 0 8px; color: #f5f5f5;">Кураев Магомед</h3>
+      <p style="font-size: 1rem; line-height: 1.5; margin: 0; color: #d0c9b8;">"Audi RS7 — это просто бомбовая ежи"</p>
+    </article>
 
-    <div class="review-card" style="animation-delay: 0.3s;">
-      <h3>Братанов Серёжа</h3>
-      <p>"Audi S8 – Боженька просто"</p>
-    </div>
+    <article style="
+      background: #1f1c14cc;
+      border-radius: 20px;
+      padding: 20px 28px;
+      box-shadow: 0 8px 20px #000000cc;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: default;
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+      animation-delay: 0.3s;
+    " onmouseenter="this.style.transform='scale(1.035)'; this.style.boxShadow='0 12px 36px #bfae4eaa';" onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #000000cc';">
+      <h3 style="margin: 0 0 8px; color: #f5f5f5;">Каджаева Радмила</h3>
+      <p style="font-size: 1rem; line-height: 1.5; margin: 0; color: #d0c9b8;">"Топовая S5. Как я на ней гоняю ешкин кот"</p>
+    </article>
+
+    <article style="
+      background: #1f1c14cc;
+      border-radius: 20px;
+      padding: 20px 28px;
+      box-shadow: 0 8px 20px #000000cc;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: default;
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+      animation-delay: 0.5s;
+    " onmouseenter="this.style.transform='scale(1.035)'; this.style.boxShadow='0 12px 36px #bfae4eaa';" onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #000000cc';">
+      <h3 style="margin: 0 0 8px; color: #f5f5f5;">Братанов Серёжа</h3>
+      <p style="font-size: 1rem; line-height: 1.5; margin: 0; color: #d0c9b8;">"Audi S8 – Боженька просто"</p>
+    </article>
 
   </div>
-</section>
 
-<style>
-.review-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid #3a382d;
-  border-radius: 12px;
-  padding: 16px 20px;
-  color: #d0c9b8;
-  transition: transform 0.3s ease, background 0.3s ease;
-  animation: slideUp 0.5s ease forwards;
-  opacity: 0;
-}
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 
-.review-card h3 {
-  margin: 0 0 6px;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.review-card p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.review-card:hover {
-  transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-/* Анимации */
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-</style>
 </section>
 
     
