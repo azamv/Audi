@@ -441,108 +441,120 @@
   </script>
 
 <section id="testdrive" style="
-  max-width: 650px;
-  margin: 50px auto;
-  padding: 40px 50px;
-  background: linear-gradient(135deg, #3a2a0f, #1c1305);
-  border-radius: 25px;
-  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.6);
-  font-family: 'Orbitron', sans-serif;
-  color: #f0d86f;
-  ">
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px 36px;
+  background: #1e1b16;
+  border-radius: 18px;
+  box-shadow: 0 0 12px rgba(181, 148, 85, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #c4af6d;
+  letter-spacing: 0.03em;
+">
+
   <h2 style="
-    font-size: 2.8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 24px;
     text-align: center;
-    margin-bottom: 25px;
-    text-shadow: 0 0 15px #f4d35e, 0 0 30px #f4d35e;
-  ">Записаться на тест-драйв</h2>
-
-  <form id="testDriveForm" style="
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    border-bottom: 1px solid #3b3523;
+    padding-bottom: 14px;
   ">
+    Записаться на тест-драйв
+  </h2>
 
-    <label for="name" style="font-weight: 600; font-size: 1.15rem;">
+  <form id="testDriveForm" style="display: flex; flex-direction: column; gap: 18px;">
+
+    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
       Ваше имя
-      <input type="text" id="name" name="name" placeholder="Введите ваше имя" required style="
-        width: 100%;
-        margin-top: 6px;
-        padding: 12px 18px;
-        border-radius: 15px;
-        border: none;
-        background: #382e0c;
-        color: #f0d86f;
-        font-size: 1rem;
-        box-shadow: inset 0 0 12px #f4d35e88;
-        transition: box-shadow 0.3s ease;
-      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+      <input type="text" id="name" name="name" placeholder="Иван Иванов" required
+        style="
+          margin-top: 6px;
+          padding: 10px 14px;
+          border-radius: 12px;
+          border: 1px solid #3b3523;
+          background: #292520;
+          color: #c4af6d;
+          font-size: 1rem;
+          transition: border-color 0.25s ease;
+        "
+        onfocus="this.style.borderColor='#b5973e'"
+        onblur="this.style.borderColor='#3b3523'"
+      />
     </label>
 
-    <label for="phone" style="font-weight: 600; font-size: 1.15rem;">
+    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
       Телефон
-      <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required style="
-        width: 100%;
-        margin-top: 6px;
-        padding: 12px 18px;
-        border-radius: 15px;
-        border: none;
-        background: #382e0c;
-        color: #f0d86f;
-        font-size: 1rem;
-        box-shadow: inset 0 0 12px #f4d35e88;
-        transition: box-shadow 0.3s ease;
-      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+      <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required
+        style="
+          margin-top: 6px;
+          padding: 10px 14px;
+          border-radius: 12px;
+          border: 1px solid #3b3523;
+          background: #292520;
+          color: #c4af6d;
+          font-size: 1rem;
+          transition: border-color 0.25s ease;
+        "
+        onfocus="this.style.borderColor='#b5973e'"
+        onblur="this.style.borderColor='#3b3523'"
+      />
     </label>
 
-    <label for="email" style="font-weight: 600; font-size: 1.15rem;">
+    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
       Email
-      <input type="email" id="email" name="email" placeholder="Введите ваш email" required style="
-        width: 100%;
-        margin-top: 6px;
-        padding: 12px 18px;
-        border-radius: 15px;
-        border: none;
-        background: #382e0c;
-        color: #f0d86f;
-        font-size: 1rem;
-        box-shadow: inset 0 0 12px #f4d35e88;
-        transition: box-shadow 0.3s ease;
-      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required
+        style="
+          margin-top: 6px;
+          padding: 10px 14px;
+          border-radius: 12px;
+          border: 1px solid #3b3523;
+          background: #292520;
+          color: #c4af6d;
+          font-size: 1rem;
+          transition: border-color 0.25s ease;
+        "
+        onfocus="this.style.borderColor='#b5973e'"
+        onblur="this.style.borderColor='#3b3523'"
+      />
     </label>
 
-    <label for="location" style="font-weight: 600; font-size: 1.15rem;">
+    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
       Город
-      <input type="text" id="location" name="location" placeholder="Выберите город" required style="
-        width: 100%;
-        margin-top: 6px;
-        padding: 12px 18px;
-        border-radius: 15px;
-        border: none;
-        background: #382e0c;
-        color: #f0d86f;
-        font-size: 1rem;
-        box-shadow: inset 0 0 12px #f4d35e88;
-        transition: box-shadow 0.3s ease;
-      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+      <input type="text" id="location" name="location" placeholder="Москва" required
+        style="
+          margin-top: 6px;
+          padding: 10px 14px;
+          border-radius: 12px;
+          border: 1px solid #3b3523;
+          background: #292520;
+          color: #c4af6d;
+          font-size: 1rem;
+          transition: border-color 0.25s ease;
+        "
+        onfocus="this.style.borderColor='#b5973e'"
+        onblur="this.style.borderColor='#3b3523'"
+      />
     </label>
 
-    <label for="model" style="font-weight: 600; font-size: 1.15rem;">
-      Выберите модель
-      <select id="model" name="model" required style="
-        width: 100%;
-        margin-top: 6px;
-        padding: 12px 18px;
-        border-radius: 15px;
-        border: none;
-        background: #382e0c;
-        color: #f0d86f;
-        font-size: 1rem;
-        box-shadow: inset 0 0 12px #f4d35e88;
-        cursor: pointer;
-        transition: box-shadow 0.3s ease;
-      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'">
-        <option value="" disabled selected>-- Выберите модель --</option>
+    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+      Модель
+      <select id="model" name="model" required
+        style="
+          margin-top: 6px;
+          padding: 10px 14px;
+          border-radius: 12px;
+          border: 1px solid #3b3523;
+          background: #292520;
+          color: #c4af6d;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: border-color 0.25s ease;
+        "
+        onfocus="this.style.borderColor='#b5973e'"
+        onblur="this.style.borderColor='#3b3523'"
+      >
+        <option value="" disabled selected>Выберите модель</option>
         <option value="Audi A6">Audi A6</option>
         <option value="Audi A5L">Audi A5L</option>
         <option value="Audi RS7">Audi RS7</option>
@@ -552,67 +564,70 @@
       </select>
     </label>
 
-    <label for="date" style="font-weight: 600; font-size: 1.15rem;">
-      Дата тест-драйва
-      <input type="date" id="date" name="date" required style="
-        width: 100%;
-        margin-top: 6px;
-        padding: 12px 18px;
-        border-radius: 15px;
-        border: none;
-        background: #382e0c;
-        color: #f0d86f;
-        font-size: 1rem;
-        box-shadow: inset 0 0 12px #f4d35e88;
-        transition: box-shadow 0.3s ease;
-      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+      Дата
+      <input type="date" id="date" name="date" required
+        style="
+          margin-top: 6px;
+          padding: 10px 14px;
+          border-radius: 12px;
+          border: 1px solid #3b3523;
+          background: #292520;
+          color: #c4af6d;
+          font-size: 1rem;
+          transition: border-color 0.25s ease;
+        "
+        onfocus="this.style.borderColor='#b5973e'"
+        onblur="this.style.borderColor='#3b3523'"
+      />
     </label>
 
-    <label for="time" style="font-weight: 600; font-size: 1.15rem;">
-      Время тест-драйва
-      <input type="time" id="time" name="time" required style="
-        width: 100%;
-        margin-top: 6px;
-        padding: 12px 18px;
-        border-radius: 15px;
-        border: none;
-        background: #382e0c;
-        color: #f0d86f;
-        font-size: 1rem;
-        box-shadow: inset 0 0 12px #f4d35e88;
-        transition: box-shadow 0.3s ease;
-      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    <label style="display: flex; flex-direction: column; font-weight: 500; font-size: 0.95rem;">
+      Время
+      <input type="time" id="time" name="time" required
+        style="
+          margin-top: 6px;
+          padding: 10px 14px;
+          border-radius: 12px;
+          border: 1px solid #3b3523;
+          background: #292520;
+          color: #c4af6d;
+          font-size: 1rem;
+          transition: border-color 0.25s ease;
+        "
+        onfocus="this.style.borderColor='#b5973e'"
+        onblur="this.style.borderColor='#3b3523'"
+      />
     </label>
 
     <button type="submit" style="
-      margin-top: 30px;
-      padding: 18px 0;
+      margin-top: 28px;
+      padding: 14px 0;
+      border-radius: 30px;
       border: none;
-      border-radius: 40px;
-      background: linear-gradient(90deg, #ffd54f, #b28704);
-      font-weight: 800;
-      font-size: 1.6rem;
-      color: #2c1a00;
+      background: linear-gradient(90deg, #a88f32, #d9c974);
+      color: #2f2700;
+      font-weight: 700;
+      font-size: 1.25rem;
       cursor: pointer;
-      box-shadow: 0 8px 20px #ffd54f88;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 12px #bfae4e88;
+      transition: background 0.3s ease, transform 0.25s ease;
     "
-    onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 12px 30px #ffd54fcc';"
-    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #ffd54f88';"
+    onmouseover="this.style.background='linear-gradient(90deg, #d9c974, #a88f32)'; this.style.transform='scale(1.05)';"
+    onmouseout="this.style.background='linear-gradient(90deg, #a88f32, #d9c974)'; this.style.transform='scale(1)';"
     >
       Записаться
     </button>
+
   </form>
 
-  <div id="message" style="
-    margin-top: 28px;
+  <p id="message" style="
+    margin-top: 20px;
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: 700;
-    min-height: 26px;
-    color: #f4d35e;
-    text-shadow: 0 0 12px #b28704;
-  "></div>
+    font-weight: 600;
+    color: #d9c974;
+    min-height: 24px;
+  "></p>
 </section>
 
 <footer>
