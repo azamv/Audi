@@ -494,7 +494,7 @@ h1, h2 {
     border-radius: 30px;
     font-weight: bold;
     linear-gradient(to right, #a90000c2, #c5763fde);
-    color: #000;
+    color: ##ededed;
     border: none;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
@@ -537,7 +537,7 @@ form input, form select {
     margin-bottom: 15px;
     border: 1px solid #777;
     background: #222;
-    color: #fff;
+    color: ##ededed;
     transition: 0.3s ease-in-out;
 }
 
@@ -549,7 +549,7 @@ form input:focus, form select:focus {
 
 form label {
     font-weight: bold;
-    color: #ddd;
+    color: ##ededed;
 }
 
 /* Исправление для конфигуратора */
