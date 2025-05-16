@@ -440,61 +440,179 @@
     window.onload = calculate;
   </script>
 
-<section id="testdrive">
-    <h2>Записаться на тест-драйв</h2>
-    <form action="submit_form.php" method="POST">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+<section id="testdrive" style="
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 40px 50px;
+  background: linear-gradient(135deg, #3a2a0f, #1c1305);
+  border-radius: 25px;
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.6);
+  font-family: 'Orbitron', sans-serif;
+  color: #f0d86f;
+  ">
+  <h2 style="
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px #f4d35e, 0 0 30px #f4d35e;
+  ">Записаться на тест-драйв</h2>
 
-        <label for="phone">Телефон</label>
-        <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" required>
+  <form id="testDriveForm" style="
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  ">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+    <label for="name" style="font-weight: 600; font-size: 1.15rem;">
+      Ваше имя
+      <input type="text" id="name" name="name" placeholder="Введите ваше имя" required style="
+        width: 100%;
+        margin-top: 6px;
+        padding: 12px 18px;
+        border-radius: 15px;
+        border: none;
+        background: #382e0c;
+        color: #f0d86f;
+        font-size: 1rem;
+        box-shadow: inset 0 0 12px #f4d35e88;
+        transition: box-shadow 0.3s ease;
+      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    </label>
 
-        <label for="location">Город</label>
-        <input type="text" id="location" name="location" placeholder="Выберите город" required>
+    <label for="phone" style="font-weight: 600; font-size: 1.15rem;">
+      Телефон
+      <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required style="
+        width: 100%;
+        margin-top: 6px;
+        padding: 12px 18px;
+        border-radius: 15px;
+        border: none;
+        background: #382e0c;
+        color: #f0d86f;
+        font-size: 1rem;
+        box-shadow: inset 0 0 12px #f4d35e88;
+        transition: box-shadow 0.3s ease;
+      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    </label>
 
-        <label for="model">Выберите модель</label>
-        <select id="model" name="model" required>
-            <option value="a6">Audi A6</option>
-            <option value="a5l">Audi A5L</option>
-            <option value="rs7">Audi RS7</option>
-            <option value="rsq8">Audi RSQ8</option>
-            <option value="s8">Audi S8</option>
-            <option value="q5">Audi Q5</option>
-        </select>
+    <label for="email" style="font-weight: 600; font-size: 1.15rem;">
+      Email
+      <input type="email" id="email" name="email" placeholder="Введите ваш email" required style="
+        width: 100%;
+        margin-top: 6px;
+        padding: 12px 18px;
+        border-radius: 15px;
+        border: none;
+        background: #382e0c;
+        color: #f0d86f;
+        font-size: 1rem;
+        box-shadow: inset 0 0 12px #f4d35e88;
+        transition: box-shadow 0.3s ease;
+      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    </label>
 
-        <section id="configurator" class="configurator-section">
-            <h2>Конфигуратор Audi</h2>
-            <p>Выберите свою идеальную модель Audi</p>
-            <select id="model-select">
-                <option value="a6">Audi A6</option>
-                <option value="a7">Audi A7</option>
-                <option value="q8">Audi Q8</option>
-                <option value="rs6">Audi RS6</option>
-            </select>
-            <button onclick="showConfig()">Настроить</button>
-            <p id="config-result"></p>
-        </section>
-        
-        <script>
-            function showConfig() {
-                let model = document.getElementById('model-select').value;
-                document.getElementById('config-result').innerText = "Вы выбрали " + model;
-            }
-        </script>
-        
-        <div class="chatbot">💬 Чат с консультантом</div>
+    <label for="location" style="font-weight: 600; font-size: 1.15rem;">
+      Город
+      <input type="text" id="location" name="location" placeholder="Выберите город" required style="
+        width: 100%;
+        margin-top: 6px;
+        padding: 12px 18px;
+        border-radius: 15px;
+        border: none;
+        background: #382e0c;
+        color: #f0d86f;
+        font-size: 1rem;
+        box-shadow: inset 0 0 12px #f4d35e88;
+        transition: box-shadow 0.3s ease;
+      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    </label>
 
-        <label for="date">Дата тест-драйва</label>
-        <input type="date" id="date" name="date" required>
+    <label for="model" style="font-weight: 600; font-size: 1.15rem;">
+      Выберите модель
+      <select id="model" name="model" required style="
+        width: 100%;
+        margin-top: 6px;
+        padding: 12px 18px;
+        border-radius: 15px;
+        border: none;
+        background: #382e0c;
+        color: #f0d86f;
+        font-size: 1rem;
+        box-shadow: inset 0 0 12px #f4d35e88;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'">
+        <option value="" disabled selected>-- Выберите модель --</option>
+        <option value="Audi A6">Audi A6</option>
+        <option value="Audi A5L">Audi A5L</option>
+        <option value="Audi RS7">Audi RS7</option>
+        <option value="Audi RSQ8">Audi RSQ8</option>
+        <option value="Audi S8">Audi S8</option>
+        <option value="Audi Q5">Audi Q5</option>
+      </select>
+    </label>
 
-        <label for="time">Время тест-драйва</label>
-        <input type="time" id="time" name="time" required>
+    <label for="date" style="font-weight: 600; font-size: 1.15rem;">
+      Дата тест-драйва
+      <input type="date" id="date" name="date" required style="
+        width: 100%;
+        margin-top: 6px;
+        padding: 12px 18px;
+        border-radius: 15px;
+        border: none;
+        background: #382e0c;
+        color: #f0d86f;
+        font-size: 1rem;
+        box-shadow: inset 0 0 12px #f4d35e88;
+        transition: box-shadow 0.3s ease;
+      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    </label>
 
-        <button type="submit">Записаться</button>
-    </form>
+    <label for="time" style="font-weight: 600; font-size: 1.15rem;">
+      Время тест-драйва
+      <input type="time" id="time" name="time" required style="
+        width: 100%;
+        margin-top: 6px;
+        padding: 12px 18px;
+        border-radius: 15px;
+        border: none;
+        background: #382e0c;
+        color: #f0d86f;
+        font-size: 1rem;
+        box-shadow: inset 0 0 12px #f4d35e88;
+        transition: box-shadow 0.3s ease;
+      " onfocus="this.style.boxShadow='0 0 16px #ffd54f'" onblur="this.style.boxShadow='inset 0 0 12px #f4d35e88'"/>
+    </label>
+
+    <button type="submit" style="
+      margin-top: 30px;
+      padding: 18px 0;
+      border: none;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #ffd54f, #b28704);
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: #2c1a00;
+      cursor: pointer;
+      box-shadow: 0 8px 20px #ffd54f88;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    "
+    onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 12px 30px #ffd54fcc';"
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #ffd54f88';"
+    >
+      Записаться
+    </button>
+  </form>
+
+  <div id="message" style="
+    margin-top: 28px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    min-height: 26px;
+    color: #f4d35e;
+    text-shadow: 0 0 12px #b28704;
+  "></div>
 </section>
 
 <footer>
