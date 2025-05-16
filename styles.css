@@ -453,7 +453,7 @@ h1, h2 {
 .model-card .buy-button {
     margin-top: auto; /* Кнопки всегда внизу */
     padding: 12px 20px;
-    background-color: #0ff;
+    background: linear-gradient(to right, #0ff, #5998bb);
     border: none;
     color: black;
     font-size: 16px;
@@ -483,8 +483,7 @@ h1, h2 {
 }
 
 .model-card .buy-button:hover {
-    background-color: #00a3ff;
-}
+background-color: linear-gradient(to right, #0ff, #5998bb)}
 
 
 /* Анимации для кнопок */
