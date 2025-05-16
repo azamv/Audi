@@ -357,59 +357,89 @@
 </section>
     
 <section id="reviews" class="reviews-section" style="
-  max-width: 900px; 
-  margin: 60px auto; 
-  padding: 30px 25px; 
-  background: #121212; 
-  color: white; 
-  border-radius: 12px; 
-  font-family: 'Orbitron', sans-serif; 
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.15); 
-  display: flex; 
-  flex-direction: column; 
-  gap: 20px; 
-  text-align: center;
+  max-width: 1000px;
+  margin: 40px auto 80px; /* чуть меньше сверху, больше снизу для гармонии */
+  padding: 40px 24px;
+  font-family: 'Poppins', sans-serif;
+  background: #2d280ed1;
+  border-radius: 24px;
+  color: white;
+  box-shadow: 0 0 48px #000000cc;
 ">
+
   <h2 style="
-    font-weight: 700; 
-    font-size: 2rem; 
-    margin-bottom: 20px; 
-    color: white; 
-    letter-spacing: 0.05em; 
-    text-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
-  ">Отзывы клиентов</h2>
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    border-bottom: 3px solid #444;
+    padding-bottom: 12px;
+    color: #e3e1d9;
+  ">Отзывы клиентов Audi</h2>
 
-  <div class="review" style="
-    background: #1a1a1a; 
-    border: 1px solid rgba(212, 175, 55, 0.3); 
-    border-radius: 10px; 
-    padding: 20px 15px; 
-    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
-  ">
-    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 6px; color: #d4af37;">Кураев Магомед</h3>
-    <p style="font-style: italic; color: #eee; margin: 0;">"Audi RS7 — это просто бомбовая ежи"</p>
-  </div>
+  <div style="display: flex; flex-direction: column; gap: 36px;">
 
-  <div class="review" style="
-    background: #1a1a1a; 
-    border: 1px solid rgba(212, 175, 55, 0.3); 
-    border-radius: 10px; 
-    padding: 20px 15px; 
-    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
-  ">
-    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 6px; color: #d4af37;">Каджаева Радмила</h3>
-    <p style="font-style: italic; color: #eee; margin: 0;">"Топовая S5. Как я на ней гоняю ешкин кот"</p>
-  </div>
+    <article style="
+      display: flex;
+      gap: 28px;
+      background: #1f1c14;
+      border-radius: 20px;
+      padding: 28px 36px;
+      box-shadow: 0 10px 30px #000000cc;
+      transition: transform 0.3s ease;
+      cursor: default;
+      flex-direction: column;
+    ">
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; color: #bfae4e;">Кураев Магомед</h3>
+      <p style="font-size: 1rem; color: #d0c9b8; line-height: 1.5; font-style: italic;">
+        "Audi RS7 — это просто бомбовая ежи"
+      </p>
+      <footer style="margin-top: auto; font-size: 0.85rem; color: #999; margin-top: 16px;">
+        10 мая 2025 &nbsp;|&nbsp; Источник: <a href="https://www.audi.com" target="_blank" style="color: #bfae4e; text-decoration: none;">audi.com</a>
+      </footer>
+    </article>
 
-  <div class="review" style="
-    background: #1a1a1a; 
-    border: 1px solid rgba(212, 175, 55, 0.3); 
-    border-radius: 10px; 
-    padding: 20px 15px; 
-    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
-  ">
-    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 6px; color: #d4af37;">Братанов Серёжа</h3>
-    <p style="font-style: italic; color: #eee; margin: 0;">"Audi S8 – Боженька просто"</p>
+    <article style="
+      display: flex;
+      gap: 28px;
+      background: #1f1c14;
+      border-radius: 20px;
+      padding: 28px 36px;
+      box-shadow: 0 10px 30px #000000cc;
+      transition: transform 0.3s ease;
+      cursor: default;
+      flex-direction: column;
+    ">
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; color: #bfae4e;">Каджаева Радмила</h3>
+      <p style="font-size: 1rem; color: #d0c9b8; line-height: 1.5; font-style: italic;">
+        "Топовая S5. Как я на ней гоняю ешкин кот"
+      </p>
+      <footer style="margin-top: auto; font-size: 0.85rem; color: #999; margin-top: 16px;">
+        12 апреля 2025 &nbsp;|&nbsp; Источник: <a href="https://www.audi.com" target="_blank" style="color: #bfae4e; text-decoration: none;">audi.com</a>
+      </footer>
+    </article>
+
+    <article style="
+      display: flex;
+      gap: 28px;
+      background: #1f1c14;
+      border-radius: 20px;
+      padding: 28px 36px;
+      box-shadow: 0 10px 30px #000000cc;
+      transition: transform 0.3s ease;
+      cursor: default;
+      flex-direction: column;
+    ">
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; color: #bfae4e;">Братанов Серёжа</h3>
+      <p style="font-size: 1rem; color: #d0c9b8; line-height: 1.5; font-style: italic;">
+        "Audi S8 – Боженька просто"
+      </p>
+      <footer style="margin-top: auto; font-size: 0.85rem; color: #999; margin-top: 16px;">
+        3 марта 2025 &nbsp;|&nbsp; Источник: <a href="https://www.audi.com" target="_blank" style="color: #bfae4e; text-decoration: none;">audi.com</a>
+      </footer>
+    </article>
+
   </div>
 </section>
 
