@@ -358,86 +358,81 @@
         
 <section id="reviews" class="reviews-section" style="
   max-width: 1000px;
-  margin: 0 auto -40px; /* убираем верхний отступ, можно даже отрицательный */
+  margin: 0 auto 80px;
   padding: 0 24px 48px;
   font-family: 'Poppins', sans-serif;
-  background: transparent; /* пусть наследует фон или покажет плавность */
-  border-radius: 0 0 24px 24px; /* скругление только снизу */
-  color: #e0e0e0;
-  box-shadow: none;
+  background: #2d280ed1; /* тот же фон, что и у новостей */
+  border-radius: 0 0 24px 24px; /* только нижние скругления */
+  color: white;
+  box-shadow: 0 0 48px #000000cc;
+  margin-top: -32px; /* чтобы визуально примыкал */
 ">
 
   <h2 style="
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 700;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
     text-align: center;
-    letter-spacing: 0.07em;
-    color: #f5f5f5;
-    text-shadow: 0 0 8px #bfae4eaa;
+    letter-spacing: 0.06em;
+    color: #e3e1d9;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
   ">Отзывы клиентов</h2>
 
-  <div style="display: flex; flex-direction: column; gap: 20px;">
+  <div style="display: flex; flex-direction: column; gap: 28px;">
 
-    <article style="
+    <!-- Отзыв 1 -->
+    <div style="
       background: #1f1c14cc;
-      border-radius: 20px;
       padding: 20px 28px;
-      box-shadow: 0 8px 20px #000000cc;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px #00000088;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #d0c9b8;
       cursor: default;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out forwards;
-      animation-delay: 0.1s;
-    " onmouseenter="this.style.transform='scale(1.035)'; this.style.boxShadow='0 12px 36px #bfae4eaa';" onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #000000cc';">
-      <h3 style="margin: 0 0 8px; color: #f5f5f5;">Кураев Магомед</h3>
-      <p style="font-size: 1rem; line-height: 1.5; margin: 0; color: #d0c9b8;">"Audi RS7 — это просто бомбовая ежи"</p>
-    </article>
+    "
+    onmouseenter="this.style.transform='scale(1.025)'; this.style.boxShadow='0 12px 36px #000000aa';"
+    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #00000088';"
+    >
+      <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 6px;">Кураев Магомед</h3>
+      <p style="font-size: 1rem; line-height: 1.5;">"Audi RS7 — это просто бомбовая ежи"</p>
+    </div>
 
-    <article style="
+    <!-- Отзыв 2 -->
+    <div style="
       background: #1f1c14cc;
-      border-radius: 20px;
       padding: 20px 28px;
-      box-shadow: 0 8px 20px #000000cc;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px #00000088;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #d0c9b8;
       cursor: default;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out forwards;
-      animation-delay: 0.3s;
-    " onmouseenter="this.style.transform='scale(1.035)'; this.style.boxShadow='0 12px 36px #bfae4eaa';" onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #000000cc';">
-      <h3 style="margin: 0 0 8px; color: #f5f5f5;">Каджаева Радмила</h3>
-      <p style="font-size: 1rem; line-height: 1.5; margin: 0; color: #d0c9b8;">"Топовая S5. Как я на ней гоняю ешкин кот"</p>
-    </article>
+    "
+    onmouseenter="this.style.transform='scale(1.025)'; this.style.boxShadow='0 12px 36px #000000aa';"
+    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #00000088';"
+    >
+      <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 6px;">Каджаева Радмила</h3>
+      <p style="font-size: 1rem; line-height: 1.5;">"Топовая S5. Как я на ней гоняю ешкин кот"</p>
+    </div>
 
-    <article style="
+    <!-- Отзыв 3 -->
+    <div style="
       background: #1f1c14cc;
-      border-radius: 20px;
       padding: 20px 28px;
-      box-shadow: 0 8px 20px #000000cc;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px #00000088;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #d0c9b8;
       cursor: default;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out forwards;
-      animation-delay: 0.5s;
-    " onmouseenter="this.style.transform='scale(1.035)'; this.style.boxShadow='0 12px 36px #bfae4eaa';" onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px #000000cc';">
-      <h3 style="margin: 0 0 8px; color: #f5f5f5;">Братанов Серёжа</h3>
-      <p style="font-size: 1rem; line-height: 1.5; margin: 0; color: #d0c9b8;">"Audi S8 – Боженька просто"</p>
-    </article>
+    "
+    onmouseenter="this.style.transform='scale(1.025)'; this.style.boxShadow='0 12px 36px #000000aa';"
+    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px #00000088';"
+    >
+      <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 6px;">Братанов Серёжа</h3>
+      <p style="font-size: 1rem; line-height: 1.5;">"Audi S8 – Боженька просто"</p>
+    </div>
 
   </div>
-
-  <style>
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </section>
 
     
